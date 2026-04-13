@@ -1,0 +1,36 @@
+전체 연결
+
+✅ 1. Internet Gateway ↔ VPC 연결
+
+```md
+1. Internet Gateway 메뉴 이동
+2. IGW 선택
+3. Actions → Attach to VPC
+4. VPC 선택
+```
+
+👉 VPC가 인터넷과 연결될 준비 완료
+
+✅ 2. 라우팅 테이블에 IGW 연결 (라우트 추가)
+이게 실제 인터넷 연결을 만드는 단계 ⭐
+
+```md
+🔹 퍼블릭 라우팅 테이블 설정
+1. 라우팅 테이블 선택
+2. Edit routes
+3. 추가:
+0.0.0.0/0 → Internet Gateway
+```
+👉 “외부로 가는 모든 트래픽 → IGW로 보내라”
+
+
+✅ 3. 라우팅 테이블 ↔ 서브넷 연결
+👉 이걸 안 하면 절대 동작 안 함 (진짜 중요)
+
+```md
+🔹 방법
+1. 라우팅 테이블 선택
+2. Subnet associations
+3. Edit associations
+4. 퍼블릭 서브넷 선택
+```
