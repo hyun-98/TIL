@@ -1,0 +1,60 @@
+HTML file EC2 서버에 올리기
+
+방법 1️⃣ User Data 안에 HTML 직접 넣기
+
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd
+systemctl start httpd
+systemctl enable httpd
+
+cat <<EOF > /var/www/html/index.html
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Site</title>
+</head>
+<body>
+  <h1>내가 만든 페이지</h1>
+  <p>Hello EC2!</p>
+</body>
+</html>
+EOF
+```
+
+방법 2️⃣ 내 PC에서 파일 업로드 (가장 많이 씀 👍)
+📦 SCP 사용
+
+```
+scp -i key.pem index.html ec2-user@퍼블릭IP:/var/www/html/index.html
+```
+
+방법 3️⃣ 여러 파일 한 번에 업로드
+```
+scp -i key.pem -r ./my-website ec2-user@퍼블릭IP:/var/www/html/
+```
+👉 폴더 전체 업로드 가능 (CSS, JS 포함)
+
+
+방법 4️⃣ Git으로 배포 (추천 👍 실무 스타일)
+```
+#!/bin/bash
+yum update -y
+yum install -y httpd git
+systemctl start httpd
+systemctl enable httpd
+
+cd /var/www/html
+git clone https://github.com/username/repo.git .
+```
+👉 장점:
+
+코드 관리 쉬움
+업데이트 편함
+
+방법 5️⃣ S3에서 파일 가져오기
+```
+aws s3 cp s3://버킷이름/index.html /var/www/html/index.html
+```
+👉 대규모 배포할 때 좋음
