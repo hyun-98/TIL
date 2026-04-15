@@ -1,0 +1,40 @@
+🔐 1️⃣ A → B 접속 (정석: Bastion 방식)
+
+A 서버 접속
+```
+ssh -A -i test_v.1.pem ec2-user@A-public-ip
+
+ssh -i C:\Users\PCNI\Desktop\업무\key\test_v.1.pem ec2-user@3.36.126.47
+```
+
+✔️ (1) B 서버 SG 설정
+
+B 서버 Inbound:
+
+SSH (22)
+Source:
+✅ A 서버 Security Group (추천)
+또는 A 서버 Private IP
+
+✔️ (2) A 서버에서 접속
+
+```
+ssh ec2-user@B private IP
+```
+
+
+---
+
+🔐 2️⃣ B → A 접속
+
+✔️ (1) A 서버 SG 확인
+
+A 서버 Inbound:
+
+SSH (22)
+Source:
+내 PC IP (또는 0.0.0.0/0 테스트용)
+
+👉 이미 퍼블릭 서버라 대부분 열려 있음
+
+
