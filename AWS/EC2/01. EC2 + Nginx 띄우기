@@ -1,6 +1,13 @@
 1. EC2 + Nginx 띄우기
 
 1. EC2 인스턴스 생성
+
+Private EC2 인스턴스 생성
+1. 퍼블릭 IP 없음
+2. Private Subnet에 있음
+
+
+
 2. 보안 그룹 설정 (HTTP 허용)
 3. 서버 접속 (SSH)
 4. Nginx 설치
@@ -18,3 +25,5 @@ sudo systemctl enable nginx
 ```
 
 5. 웹페이지 확인
+
+6. (중요) 서버 자동 시작 설정
