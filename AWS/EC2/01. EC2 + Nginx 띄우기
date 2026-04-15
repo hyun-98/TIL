@@ -1,0 +1,20 @@
+1. EC2 + Nginx 띄우기
+
+1. EC2 인스턴스 생성
+2. 보안 그룹 설정 (HTTP 허용)
+3. 서버 접속 (SSH)
+4. Nginx 설치
+
+```
+nginx 설치
+sudo dnf update -y
+sudo dnf install nginx -y
+```
+
+```
+Nginx 실행
+sudo systemctl start nginx
+sudo systemctl enable nginx
+```
+
+5. 웹페이지 확인
