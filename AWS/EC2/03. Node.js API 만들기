@@ -13,11 +13,15 @@ node -v // node.js 버전 확인
 
 sudo dnf install nodejs -y // node.js 설치
 
-2️⃣ 프로젝트 만들기
+2️⃣ 프로젝트 만들기 : “프로젝트 폴더 만들고 → 들어가서 → Node.js 프로젝트 초기화”
 
 mkdir my-api
 cd my-api
-npm init -y
+npm init -y // 👉 Node.js 프로젝트 시작 설정
+
+npm : 
+👉 Node.js 패키지 관리자
+👉 라이브러리 설치하는 도구
 
 👉 package.json 생성됨
 
@@ -52,9 +56,15 @@ app.listen(3000, () => {
 
 5️⃣ 서버 실행
 
-node app.js
+node app.js // “Node.js로 app.js 파일을 실행해라”
 
 http://서버IP:3000
+http://3.38.211.160:3000/
+
+
+사이트에 연결할 수 없음
+3.38.211.160에서 응답하는 데 시간이 너무 오래 걸립니다.
+
 
 6️⃣ 백그라운드 실행
 서버 계속 켜두려면:
