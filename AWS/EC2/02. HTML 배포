@@ -1,0 +1,27 @@
+[HTML 배포]
+
+1. HTML 파일 서버에 업로드
+
+nginx 기본 웹 폴더: /usr/share/nginx/html
+👉 여기에 있는 파일이 웹에서 보임
+
+2. nginx 기본 경로에 넣기
+✔ 방법 1: 직접 서버에서 만들기 (간단 테스트용)
+sudo vi /usr/share/nginx/html/index.html
+
+sudo : 관리자(root) 권한으로 실행
+vi : 리눅스 기본 텍스트 에디터 (편집기) / 파일 열고 수정하는 프로그램
+/usr/share/nginx/html/index.html : 파일 경로
+
+
+
+<h1>Hello Nginx</h1>
+<p>내 서버 성공 🚀</p>
+
+저장 : 
+ESC → :wq
+
+✔ 방법 2: 로컬 파일 업로드
+
+
+3. nginx 재시작
