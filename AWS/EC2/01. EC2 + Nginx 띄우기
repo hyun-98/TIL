@@ -18,15 +18,27 @@ Nginx :
 ```
 nginx 설치
 sudo dnf update -y
+**리눅스(특히 Fedora, Rocky, AlmaLinux 등)**에서 사용하는 패키지 업데이트 명령어
+
+sudo : **관리자 권한(root)**으로 실행
+dnf : 패키지 관리자 (앱스토어 같은 역할) / 프로그램 설치, 삭제, 업데이트 담당
+update : 설치된 패키지들을 최신 버전으로 업데이트
+-y : “yes” 자동 입력 옵션
+
 sudo dnf install nginx -y
 ```
 
 ```
 Nginx 실행
-sudo systemctl start nginx
-sudo systemctl enable nginx
+sudo systemctl start nginx   // 서버 실행
+sudo systemctl enable nginx  // 서버 재시작시 자동 실행
+
+systemctl : 리눅스의 서비스 관리 도구 / 백그라운드에서 돌아가는 프로그램(서비스)을 제어
+start : 서비스를 시작
+nginx : nginx 웹 서버
+enable : 부팅 시 자동 실행
 ```
 
 5. 웹페이지 확인
 
-6. (중요) 서버 자동 시작 설정
+http://퍼블릭 IPv4 주소 접속
