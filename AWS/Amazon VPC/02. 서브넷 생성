@@ -1,3 +1,23 @@
+[서브넷 이름]
+
+
+[환경]-[역할]-[az]
+
+ex)
+- dev-public-a
+- dev-public-c
+- dev-private-a
+- dev-private-c
+
+VPC : 10.1.0.0/24
+subnet :
+10.1.0.0/26      (Public-2a)
+10.1.0.64/26     (Public-2c)
+10.1.0.128/26    (Private-2a)
+10.1.0.192/26    (Private-2c)
+
+
+
 [가용 영역(Availability Zone, AZ)]
 : AZ는 하나의 리전(Region) 안에 있는 물리적으로 분리된 데이터센터 묶음
 
