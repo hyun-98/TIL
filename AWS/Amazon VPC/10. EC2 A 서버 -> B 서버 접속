@@ -75,4 +75,25 @@ ssh ec2-user@10.1.0.45
 ssh -i key.pem -J ec2-user@EC2-1-PUBLIC-IP ec2-user@EC2-2-PRIVATE-IP
 ssh -i dev-web-key.pem -J ec2-user@3.38.211.160 ec2-user@10.1.0.45
 
+---
+[26.04.16. 15.07]
+
+🔥 5. 실무 방식 (추천): SSH Agent Forwarding
+
+👉 이게 진짜 중요
+
+로컬에서 실행:
+ssh -A -i my-key.pem ec2-user@<Bastion IP>
+
+그 다음 Bastion 안에서:
+
+ssh ec2-user@<Private EC2 IP>
+
+👉 키 없이 접속됨 (로컬 키를 전달)
+
+😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂😂
+
+Bash 설치하니까 바로되네 진짜 화나고 기쁘고 짜증난다
+
+
 
