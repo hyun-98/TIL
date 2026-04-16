@@ -1,0 +1,7 @@
+
+
+1️⃣ Private EC2 2대 준비
+2️⃣ Target Group 생성
+3️⃣ ALB 생성
+4️⃣ 보안 그룹 연결
+5️⃣ 테스트
