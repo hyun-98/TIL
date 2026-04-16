@@ -96,4 +96,13 @@ ssh ec2-user@<Private EC2 IP>
 Bash 설치하니까 바로되네 진짜 화나고 기쁘고 짜증난다
 
 
+---
+[claude로 게임 개발]
+웹 배포
+
+1. 로컬 Git Bash에서 — /tmp에 먼저 업로드
+scp -i dev-web-key.pem dodge_game.html ec2-user@3.38.211.160:/tmp/
+
+EC2 터미널에서:
+sudo mv /tmp/dodge_game.html /usr/share/nginx/html/index.html
 
