@@ -47,15 +47,32 @@ Source:
 🔑 방법 1: SSH Agent Forwarding (가장 추천 👍)
 👉 로컬 PC의 키를 A를 통해 B에 전달
 
-1단계 (로컬 → A)
-ssh -A -i A-key.pem ec2-user@A-public-ip
+✅ 설정 방법
+💻 1. 로컬 PC에서 실행
+Start-Service ssh-agent  // SSH 키를 대신 관리해주는 “백그라운드 프로그램” 실행 명령어
+ssh-add C:\Users\PCNI\.ssh\web-dev-ec2-key.pem
 
-2단계 (A → B)
-ssh ec2-user@10.0.2.37
+(이건 나중에 해보자!)
+
+💻 2. EC2-1 접속 (Agent forwarding 켜기)
+ssh -A ec2-user@3.38.211.160
+
+👉 -A가 핵심 (Agent Forwarding)
+
+💻 3. EC2-2 접속 (키 없이!)
+ssh ec2-user@10.1.0.45
+
+👉 🎉 키 없이 접속됨
+
+
 
 ---
 
+✅ 방법 2️⃣ Authorized_keys 방식 (실무 느낌 👍)
 
+👉 Bastion (EC2-1)을 통해 접속
 
+ssh -i key.pem -J ec2-user@EC2-1-PUBLIC-IP ec2-user@EC2-2-PRIVATE-IP
+ssh -i dev-web-key.pem -J ec2-user@3.38.211.160 ec2-user@10.1.0.45
 
 
