@@ -71,10 +71,10 @@ http://서버IP:3000
 6️⃣ 백그라운드 실행
 서버 계속 켜두려면:
 ```
-npm install -g pm2
+sudo npm install -g pm2
 pm2 start app.js
-pm2 startup
-pm2 save
+pm2 startup          # 재부팅 후에도 자동 시작
+pm2 save              # 부팅 시 자동 실행 등록
 ```
 👉 서버 꺼져도 자동 실행됨
 
@@ -102,5 +102,7 @@ sudo systemctl restart nginx
 http://서버IP/api
 
 👉 Node.js API 응답 나옴 🎉
+: Hello API 🚀
+
 
 
