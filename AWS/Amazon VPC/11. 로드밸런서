@@ -34,11 +34,24 @@ ALB 기준
 - 요청이 번갈아 가면서 분산되는지 확인
 
 1️⃣ Private EC2 2대 준비
+
+4️⃣ 보안 그룹 연결
+- Bastion SG
+SSH (22) : 내 IP만 허용
+
+- Private EC2 SG
+SSH (22) : Bastion SG에서만 허용
+HTTP (80) : ALB SG에서만 허용
+
+- ALB SG
+HTTP (80) : 0.0.0.0/0 (전체 공개)
+
 2️⃣ Target Group 생성
 3️⃣ ALB 생성
-4️⃣ 보안 그룹 연결
 5️⃣ 테스트
 
+
+성공!!!
 
 ---
 
