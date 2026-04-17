@@ -1,1 +1,32 @@
 DB 연결
+
+1. EC2에 DB 설치
+
+private EC2에 직접 설치 불가X
+
+Bastion 서버에 디렉토리 만들어서 MariaDB 패키지 다운로드 (install x, download only) 후
+private EC2로 파일 전송
+
+
+priavte EC2에 설치
+
+1. Bastion 서버에서 폴더 생성
+
+mkdir -p ~/mariadb-packages
+cd /mariadb-packages
+
+[폴더 내부에 다운로드]
+sudo dnf download --resolve mariadb105-server
+
+
+2. private EC2로 폴더 전송
+scp -r ~/mariadb-rpms ec2-user@PRIVATE_IP:/home/ec2-user/
+
+3. private EC2 접속 후 설치
+ssh ec2-user@PRIVATE IP
+cd mariadb-packages
+sudo dnf install -y *.rpm
+
+
+
+2. RDS
