@@ -27,6 +27,14 @@ ssh ec2-user@PRIVATE IP
 cd mariadb-packages
 sudo dnf install -y *.rpm
 
+음.. 굉장히 복잡하고 파일이 잘깨진다.
+이런거 때문에도 사람들이 NAT로 인터넷 연결해서 사용하나보다.
+
+NAT : 먼저 나간 응답에 대한 요청만 들어올 수 있다.
+Private EC2가 인터넷은 나가되, 외부에서 직접 들어오지는 못하게 해주는 AWS 중간 관문
+집 안에서 택배 주문은 가능 (outbound)
+“출발은 Private EC2, 도착은 Internet”
+
 
 
 2. RDS
