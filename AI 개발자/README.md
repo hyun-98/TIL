@@ -1,14 +1,14 @@
 1. 창작 및 디자인 (이미지/영상)
-Canva (Magic Studio) -> 유해사이트 차단 되었네...
-Midjourney / DALL·E 3
-Runway Gen-3 / Sora
+- Canva (Magic Studio) -> 유해사이트 차단 되었네...
+- Midjourney / DALL·E 3
+- Runway Gen-3 / Sora
 
 2. 업무 및 생산성 (문서/데이터)
-Gamma (감마)
-NotebookLM (Google)
-Perplexity
+- Gamma (감마)
+- NotebookLM (Google)
+- Perplexity
 
 3. 개발 및 코딩
-Cursor (커서)
-v0.dev (Vercel)
-Replit Agent
+- Cursor (커서)
+- v0.dev (Vercel)
+- Replit Agent
