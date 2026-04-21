@@ -100,7 +100,57 @@ RSS → 기사 수집
 ## 🔥 STEP 1 — Make 가입
 
 
-Run scenario : 
-
-
 <img width="1905" height="899" alt="image" src="https://github.com/user-attachments/assets/5952841f-5a3d-4068-9247-e32e1d0150bb" />
+
+RSS
+URL : https://news.google.com/rss/search?q=%EC%9D%B8%EA%B3%B5%EC%A7%80%EB%8A%A5+%EB%B3%B4%EC%95%88&hl=ko&gl=KR&ceid=KR:ko
+Maximum number of returned items* : 5
+
+Text Aggregator
+Source Module : RSS
+Text : 
+```
+<div style="background:#f5f5f5; padding:20px;">
+
+  <h2 style="color:#222;">📰 {{1.rssFields.title}}</h2>
+
+  <div style="border:1px solid #ddd; border-radius:10px; padding:15px; margin-bottom:15px; background:white;">
+
+    <h3 style="margin:0 0 10px 0; color:#333;">
+    </h3>
+
+    <a href="{{1.rssFields.link}}"
+       style="display:inline-block; padding:8px 12px; background:#4CAF50; color:white; text-decoration:none; border-radius:5px;">
+       기사 보러가기
+    </a>
+
+  </div>
+
+</div>
+```
+
+gmail
+content
+```
+<h2>📰 오늘의 AI 뉴스</h2>
+
+{{5.text}}
+```
+
+
+
+1️⃣ AI 요약
+
+openAI 연결단계
+1. API 키 발급
+
+
+2️⃣ 필터
+
+
+3️⃣ 중복 제거
+4️⃣ 스케줄
+5️⃣ 디자인
+
+
+메일로 자동으로 07:00 자동으로 기사 보내게는 했다
