@@ -133,7 +133,7 @@ dependencies:
   http: ^1.2.0        # ← 이 줄 추가!
 ```
 
-## flutter 설치
+# flutter 설치
 * https://docs.flutter.dev/install/archive
 * 환경변수 설정
 
@@ -186,4 +186,17 @@ class ApiService {
 * flutter create todo_app
 * flutter run
 
+---
 
+# Android Studio 설치
+
+
+## flutter doctor
+-> 작동에 필요한 설치들이 되었는지 확인
+
+---
+## 이제 앱 빌드하기!
+1. 프로젝트 폴더로 이동
+2. 패키지 설치 `flutter pub get`
+3. APK 빌드 `flutter build apk --release`
+4.  
