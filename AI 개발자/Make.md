@@ -1,12 +1,12 @@
-[뉴스 자동화]
-
+# 뉴스 자동화
 
 <img width="1496" height="598" alt="image" src="https://github.com/user-attachments/assets/34d0210e-24ad-425f-9e64-fb7995a2e7c1" />
 
 
 RSS + Make AI Toolkit + Text aggregator + Gmail
 
-[RSS]
+---
+### RSS
 
 RSS (Really Simple Syndication)
 : 웹사이트의 새 글/뉴스를 자동으로 모아주는 '피드' 기술
@@ -33,7 +33,7 @@ Select one option to continue
 - From now on (앞으로 새로 올라오는 뉴스만 처리)
 
 ---
-[Gmail]
+### Gmail
 * Connection
 
 * To (보내는 사람) / Recipinent address1 (보내는 사람 주소) / subject (이메일의 제목) / body type (이메일의 내용)
