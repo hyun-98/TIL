@@ -74,5 +74,10 @@ def hello():
 
 return : 함수 결과 반환
 
+def add(a, b):
+    return a + b
+
+
+
 ---
 * 입력 / 출력
