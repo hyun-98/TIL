@@ -72,5 +72,7 @@ def 함수이름():
 def hello():
     print("hello")
 
+return : 함수 결과 반환
+
 ---
 * 입력 / 출력
