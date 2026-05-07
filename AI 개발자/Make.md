@@ -16,19 +16,16 @@ Google News RSS : https://news.google.com/rss/search?q=AI
 
 Hacker News RSS : https://news.ycombinator.com/rss
 
-
-
 * Maximum number of returned items* 가져올 뉴스(아이템) 개수 제한
-
-
 
 Watch RSS feed items : 
 
 ex. https://news.google.com/rss/search?q=AI
 
+From which point do you want to start processing data once your scenario is running?
 
-From which point do you want to start processing data once your scenario is running? 
 You can process either new or existing items in your account. 
+
 Select one option to continue 
 - Select the first RSS feed item (오래된 뉴스부터 하나씩 처리 가능.)
 - RSS feed items from after a specific date (특정 날짜 이후 뉴스만 가져오기)
