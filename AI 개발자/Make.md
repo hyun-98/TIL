@@ -4,7 +4,7 @@
 <img width="1496" height="598" alt="image" src="https://github.com/user-attachments/assets/34d0210e-24ad-425f-9e64-fb7995a2e7c1" />
 
 
-RSS + Make + Gmail
+RSS + Make AI Toolkit + Text aggregator + Gmail
 
 [RSS]
 
