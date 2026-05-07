@@ -47,7 +47,21 @@ else:
 ---
 * 반복문 (for, while)
 
+for 변수 in 반복대상:
+    실행코드
 
+for i in range(5):
+    print(i)
+
+
+while 조건:
+    실행코드
+
+count = 0
+
+while count < 5:
+    print(count)
+    count += 1
 
 ---
 * 함수
