@@ -46,14 +46,14 @@ else:
 
 ---
 * 반복문 (for, while)
-
+### for
 for 변수 in 반복대상:
     실행코드
 
 for i in range(5):
     print(i)
 
-
+### while
 while 조건:
     실행코드
 
@@ -65,6 +65,12 @@ while count < 5:
 
 ---
 * 함수
+
+def 함수이름():
+    실행코드
+
+def hello():
+    print("hello")
 
 ---
 * 입력 / 출력
