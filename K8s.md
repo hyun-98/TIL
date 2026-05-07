@@ -39,5 +39,10 @@ Service 이해 : Pod 접속 창구
 
 [실습 : PC에서 K8s 실습, nginx 배포)
 
-
+[ kubectl ]
+     ↓ 명령 전달
+[ Kubernetes Cluster ]
+     ↑ Minikube가 생성
+[ Docker Desktop ]
+     ↑ 컨테이너 실행 엔진 제공
 
