@@ -29,12 +29,28 @@ print(name)
 num = int("10")
 
 숫자 -> 문자열
+text = str(10)
 
+int(),float(),str(),bool()
 
-
-
+---
 
 * 조건문 (if)
+
+if 조건문:
+  결과문
+elif 조건문:
+  결과문
+else:
+  결과문
+
+---
 * 반복문 (for, while)
+
+
+
+---
 * 함수
+
+---
 * 입력 / 출력
