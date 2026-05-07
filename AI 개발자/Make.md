@@ -1,8 +1,14 @@
 [뉴스 자동화]
 
+
+<img width="1496" height="598" alt="image" src="https://github.com/user-attachments/assets/34d0210e-24ad-425f-9e64-fb7995a2e7c1" />
+
+
 RSS + Make + Gmail
 
 [RSS]
+
+RSS = Really Simple Syndication
 
 * URL
 
@@ -27,7 +33,7 @@ Select one option to continue
 [Gmail]
 * Connection
 
-* To/ Recipinent address1 / subject / body type
+* To (보내는 사람) / Recipinent address1 (보내는 사람 주소) / subject (이메일의 제목) / body type (이메일의 내용)
 
 * body contents(content1,
 
