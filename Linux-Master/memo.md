@@ -1,15 +1,15 @@
 
 
-ls -al
-cp, mv, rm
-cat, less, head, tail
-grep -i -r
-find / -name
-chmod 755
-chown user:group
-ps aux
-kill -9
-tar -cvf / -xvf
+- ls -al
+- cp, mv, rm
+- cat, less, head, tail
+- grep -i -r
+- find / -name
+- chmod 755
+- chown user:group
+- ps aux
+- kill -9
+- tar -cvf / -xvf
 
 
 ---
