@@ -30,8 +30,17 @@ localhost:3333으로 접속
 
 ---
 
-2. 
+2.0 User & Groups
+
 
 2.1 Landing Pages
 
+
+2.2  Sending profiles
+
+
+2.3 Email Templates
+
+
+2.4 Campaigns
 
