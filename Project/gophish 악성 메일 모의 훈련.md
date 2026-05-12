@@ -31,3 +31,7 @@ localhost:3333으로 접속
 ---
 
 2. 
+
+2.1 Landing Pages
+
+
