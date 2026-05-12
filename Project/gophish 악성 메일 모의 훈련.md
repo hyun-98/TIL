@@ -63,8 +63,15 @@ localhost:3333으로 접속
 
 <img width="1213" height="936" alt="image" src="https://github.com/user-attachments/assets/f26b5768-ec4c-4349-8e7f-a95240fe3819" />
 
+SMTP FROM : 수신자가 메일에서 보게 되는 "보낸 사람 주소"
+
+
 ### 2.5 Campaigns
   - 위 과정을 모두 다 진행했다면, 이제 모의훈련이 가능하다. 캠페인 카테고리는 실제 모의훈련을 설정하는 페이지이다.
 
 <img width="749" height="750" alt="image" src="https://github.com/user-attachments/assets/61584b48-40af-42ed-8509-cae7c630d606" />
 
+URL : 이메일 안에 있는 링크를 눌렀을 때 연결되는 Landing Page
+
+- localhost:80 = 내 컴퓨터의 웹서버 기본 포트
+- 외부에서 접속하려면 도메인 or 공인 IP 필요
