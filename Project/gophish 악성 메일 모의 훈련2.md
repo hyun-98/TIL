@@ -102,5 +102,5 @@ sudo systemctl status gophish
 아웃바운드
 - 모든 트래픽 : ALL : ALL : 0.0.0.0/0
 
-
+https://simpleicons.org/?q=air
 
