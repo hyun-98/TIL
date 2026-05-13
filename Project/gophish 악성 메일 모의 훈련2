@@ -92,4 +92,15 @@ sudo systemctl start gophish    # 지금 즉시 시작
 sudo systemctl status gophish
 ```
 
+#### 인바운드 규칙 & 아웃바운드 규칙
+
+인바운드
+- SSH : TCP : 22 : 내 IP : 서버 접속
+- HTTP :  TCP : 80 : 0.0.0.0/0 : 피싱 렌딩페이지
+- 사용자지정 : TCP : 3333 : 내 IP : GoPhish 관리콘솔
+
+아웃바운드
+- 모든 트래픽 : ALL : ALL : 0.0.0.0/0
+
+
 
