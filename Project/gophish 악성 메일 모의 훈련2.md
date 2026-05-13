@@ -102,5 +102,10 @@ sudo systemctl status gophish
 아웃바운드
 - 모든 트래픽 : ALL : ALL : 0.0.0.0/0
 
+#### icon 받아오는 사이트 (svg로 다운 없이 직접 받기)
+
 https://simpleicons.org/?q=air
+
+
+
 
